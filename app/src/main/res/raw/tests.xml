@@ -111,6 +111,17 @@
             <class>RecordedTest</class>
         </Test>
 
+        <Test title="Publish - Remote Call">
+
+            <description>The publish portion of the remote call example - sends the remote call</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Publish - Remote Call</name>
+            <class>PublishRemoteCallTest</class>
+        </Test>
+
         <Test title="Subscribe">
 
             <description>Simple Subscribe Test!</description>
@@ -169,6 +180,17 @@
 
             <name>Subscribe - Image Capture</name>
             <class>SubscribeImageTest</class>
+        </Test>
+
+        <Test title="Subscribe - Remote Call">
+
+            <description>The subscribe portion of the remote call example - receives the remote call</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Subscribe - Remote Call</name>
+            <class>SubscribeRemoteCallTest</class>
         </Test>
 
         <Test title="Subscribe - Two Stream">

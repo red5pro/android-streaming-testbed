@@ -37,6 +37,9 @@ Once you have modified your settings, you can run the application for simulator 
 | **[Record](app/src/main/java/red5pro/org/testandroidproject/tests/RecordedTest)**
 | *A publish example that records stream data on the server.*
 |
+| **[Remote Call](app/src/main/java/red5pro/org/testandroidproject/tests/PublishRemoteCallTest)**
+| *The publish portion of the remote call example - sends the remote call.*
+|
 | **[Two Way](app/src/main/java/red5pro/org/testandroidproject/tests/TwoWayTest)**
 | *An example of simultaneously publishing while subscribing - allowing a conversation. Includes stream detection and auto-connection.*
 
@@ -53,7 +56,10 @@ Once you have modified your settings, you can run the application for simulator 
 | *An example of conecting to a cluster server.*
 |
 | **[Image Capture](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeImageTest)** 
-| *Touch the subscribe stream to take a screen shot that is displayed!*  
+| *Touch the subscribe stream to take a screen shot that is displayed!*
+|
+| **[Remote Call](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeRemoteCallTest)**
+| *The subscribe portion of the remote call example - receives the remote call.* 
 |
 | **[Two Streams](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeTwoStreamTest)**
 | *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.* 
