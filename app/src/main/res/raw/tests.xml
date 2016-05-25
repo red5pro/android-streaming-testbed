@@ -1,15 +1,14 @@
 <Testbed>
-
     <Properties>
-        <bitrate>256</bitrate>
+        <bitrate>400</bitrate>
         <host>0.0.0.0</host>
         <buffer_time>1</buffer_time>
         <port>8554</port>
         <stream1>stream1</stream1>
         <stream2>stream2</stream2>
         <context>live</context>
-        <camera_width>640</camera_width>
-        <camera_height>480</camera_height>
+        <camera_width>426</camera_width>
+        <camera_height>240</camera_height>
         <debug_view>true</debug_view>
         <video_on>true</video_on>
         <audio_on>true</audio_on>
@@ -32,30 +31,33 @@
             <description>Simple publish example!</description>
 
             <Properties>
-                <bitrate>512</bitrate>
             </Properties>
 
             <name>Publish</name>
             <class>PublishTest</class>
         </Test>
 
-        <Test title="Publish - 1200">
+        <Test title="Publish - 1080p">
 
-            <description>A high bitrate publisher</description>
+            <description>A high quality publisher</description>
 
             <Properties>
-                <bitrate>1200</bitrate>
+                <camera_width>1920</camera_width>
+                <camera_height>1080</camera_height>
+                <bitrate>4500</bitrate>
             </Properties>
 
-            <name>Publish - 1200</name>
+            <name>Publish - 1080p</name>
             <class>PublishTest</class>
         </Test>
 
         <Test title="Publish - ABR">
 
-            <description>A high bitrate publisher with AdaptiveBitrateController</description>
+            <description>A high quality publisher with AdaptiveBitrateController</description>
 
             <Properties>
+                <camera_width>1920</camera_width>
+                <camera_height>1080</camera_height>
                 <bitrate>4800</bitrate>
             </Properties>
 
@@ -68,7 +70,6 @@
             <description>Touch the screen to swap which camera is being used! Verify using flash that camera is swapping properly and no rendering problems occur.</description>
 
             <Properties>
-                <bitrate>1200</bitrate>
             </Properties>
 
             <name>Publish - Camera Swap</name>
@@ -80,7 +81,6 @@
             <description>Touch the publish stream to take a screen shot that is displayed!</description>
 
             <Properties>
-                <bitrate>1200</bitrate>
             </Properties>
 
             <name>Publish - Image Capture</name>
@@ -92,7 +92,6 @@
             <description>Touch the screen to rotate the output video 90 degrees.  Verify with flash, android, or other iOS device running subscribe test.</description>
 
             <Properties>
-                <bitrate>1200</bitrate>
             </Properties>
 
             <name>Publish - Orientation</name>
@@ -104,7 +103,6 @@
             <description>A publish example that records stream data on the server.</description>
 
             <Properties>
-                <bitrate>512</bitrate>
             </Properties>
 
             <name>Publish - Record</name>
@@ -127,7 +125,6 @@
             <description>Simple Subscribe Test!</description>
 
             <Properties>
-                <buffer_time>1</buffer_time>
             </Properties>
 
             <name>Subscribe</name>
@@ -139,7 +136,6 @@
             <description>Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.</description>
 
             <Properties>
-                <buffer_time>1</buffer_time>
             </Properties>
 
             <name>Subscribe - Aspect Ratio</name>
@@ -151,7 +147,6 @@
             <description>Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.</description>
 
             <Properties>
-                <buffer_time>1</buffer_time>
             </Properties>
 
             <name>Subscribe - Bandwidth Test</name>
@@ -163,7 +158,6 @@
             <description>An example of conecting to a cluster server.</description>
 
             <Properties>
-                <buffer_time>1</buffer_time>
             </Properties>
 
             <name>Subscribe - Cluster</name>
@@ -175,7 +169,6 @@
             <description>Touch the subscribe stream to take a screen shot that is displayed</description>
 
             <Properties>
-                <bitrate>1200</bitrate>
             </Properties>
 
             <name>Subscribe - Image Capture</name>

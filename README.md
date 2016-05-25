@@ -18,9 +18,9 @@ Once you have modified your settings, you can run the application for simulator 
 
 ###[Publishing](app/src/main/java/red5pro/org/testandroidproject/tests/PublishTest)
 
-| **[1200](app/src/main/java/red5pro/org/testandroidproject/tests/PublishTest)**                 
+| **[1080p](app/src/main/java/red5pro/org/testandroidproject/tests/PublishTest)**                 
 | :-----
-| *A high bitrate publisher. Note that this is the publish test with a non-default 'bitrate' value set in tests.xml* 
+| *A high quality publisher. Note that this is the publish test with a non-default 'bitrate' and camera size values set in tests.xml*  
 |
 | **[ABR](app/src/main/java/red5pro/org/testandroidproject/tests/PublishABRTest)**
 | *A high bitrate publisher with AdaptiveBitrateController*   
