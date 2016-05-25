@@ -5,7 +5,7 @@
         <buffer_time>1</buffer_time>
         <port>8554</port>
         <stream1>stream1</stream1>
-        <stream2>stream1</stream2>
+        <stream2>stream2</stream2>
         <context>live</context>
         <camera_width>426</camera_width>
         <camera_height>240</camera_height>
