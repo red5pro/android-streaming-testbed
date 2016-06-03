@@ -20,13 +20,16 @@ Once you have modified your settings, you can run the application for simulator 
 
 | **[1080p](app/src/main/java/red5pro/org/testandroidproject/tests/PublishTest)**                 
 | :-----
-| *A high quality publisher. Note that this is the publish test with a non-default 'bitrate' and camera size values set in tests.xml*  
+| *A high quality publisher. Note that this is the publish test with a non-default 'bitrate' and camera size values set in tests.xml* 
 |
 | **[ABR](app/src/main/java/red5pro/org/testandroidproject/tests/PublishABRTest)**
 | *A high bitrate publisher with AdaptiveBitrateController*   
 |
 | **[Camera Swap](app/src/main/java/red5pro/org/testandroidproject/tests/PublishCameraSwapTest)**
 | *Touch the screen to swap which camera is being used! Verify using flash that camera is swapping properly and no rendering problems occur.*
+|
+| **[Custom Video Source](app/src/main/java/red5pro/org/testandroidproject/tests/PublishCustomSourceTest)**
+| *Uses a custom controller to supply video data to the publisher.*
 |
 | **[Image Capture](app/src/main/java/red5pro/org/testandroidproject/tests/PublishImageTest)**
 | *Touch the publish stream to take a screen shot that is displayed!*  
@@ -39,6 +42,9 @@ Once you have modified your settings, you can run the application for simulator 
 |
 | **[Remote Call](app/src/main/java/red5pro/org/testandroidproject/tests/PublishRemoteCallTest)**
 | *The publish portion of the remote call example - sends the remote call.*
+| 
+| **[Stream Manager](app/src/main/java/red5pro/org/testandroidproject/tests/PublishStreamManagerTest)**
+| *A publish example that connects with a server cluster using a Stream Manger*
 |
 | **[Two Way](app/src/main/java/red5pro/org/testandroidproject/tests/TwoWayTest)**
 | *An example of simultaneously publishing while subscribing - allowing a conversation. Includes stream detection and auto-connection.*
@@ -58,11 +64,17 @@ Once you have modified your settings, you can run the application for simulator 
 | **[Image Capture](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeImageTest)** 
 | *Touch the subscribe stream to take a screen shot that is displayed!*
 |
+| **[No View](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeNoViewTest)** 
+| *A proof of using an audio only stream without attaching it to a view.*
+|
 | **[Remote Call](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeRemoteCallTest)**
-| *The subscribe portion of the remote call example - receives the remote call.* 
+| *The subscribe portion of the remote call example - receives the remote call.*
+| 
+| **[Stream Manager](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeStreamManagerTest)**
+| *A subscribe example that connects with a server cluster using a Stream Manger.*   
 |
 | **[Two Streams](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeTwoStreamTest)**
-| *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.* 
+| *An example of subscribing to multiple streams at once, useful for subscribing to a presentation hosted by two people using a Two Way connection.*
      
 ##Notes
 

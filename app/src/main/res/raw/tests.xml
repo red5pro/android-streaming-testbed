@@ -76,6 +76,17 @@
             <class>PublishCameraSwapTest</class>
         </Test>
 
+        <Test title="Publish - Custom Video Source">
+
+            <description>Uses a custom controller to supply video data to the publisher.</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Publish - Custom Video Source</name>
+            <class>PublishCustomSourceTest</class>
+        </Test>
+
         <Test title="Publish - Image Capture">
 
             <description>Touch the publish stream to take a screen shot that is displayed!</description>
@@ -118,6 +129,17 @@
 
             <name>Publish - Remote Call</name>
             <class>PublishRemoteCallTest</class>
+        </Test>
+
+        <Test title="Publish - Stream Manager">
+
+            <description>A publish example that connects to a cluster server with the Stream Manager.</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Publish - Stream Manager</name>
+            <class>PublishStreamManagerTest</class>
         </Test>
 
         <Test title="Subscribe">
@@ -175,6 +197,17 @@
             <class>SubscribeImageTest</class>
         </Test>
 
+        <Test title="Subscribe - No View">
+
+            <description>A proof of using an audio only stream without attaching it to a view.</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Subscribe - No View</name>
+            <class>SubscribeNoViewTest</class>
+        </Test>
+
         <Test title="Subscribe - Remote Call">
 
             <description>The subscribe portion of the remote call example - receives the remote call</description>
@@ -184,6 +217,17 @@
 
             <name>Subscribe - Remote Call</name>
             <class>SubscribeRemoteCallTest</class>
+        </Test>
+
+        <Test title="Subscribe - Stream Manager">
+
+            <description>A subscribe example that connects to a cluster server with the Stream Manager.</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Subscribe - Stream Manager</name>
+            <class>SubscribeStreamManagerTest</class>
         </Test>
 
         <Test title="Subscribe - Two Stream">
