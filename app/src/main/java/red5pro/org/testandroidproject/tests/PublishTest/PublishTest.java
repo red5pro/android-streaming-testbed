@@ -47,10 +47,10 @@ public class PublishTest extends TestDetailFragment {
                                                     TestContent.GetPropertyString("context"),
                                                     TestContent.GetPropertyFloat("buffer_time"));
         R5Connection connection = new R5Connection(config);
-
+        connection.client=this;
         //setup a new stream using the connection
         publish = new R5Stream(connection);
-
+        publish.client = this;
         //show all logging
         publish.setLogLevel(R5Stream.LOG_LEVEL_DEBUG);
 
@@ -87,7 +87,9 @@ public class PublishTest extends TestDetailFragment {
 
         return rootView;
     }
-
+    public void subscriberMessage(String msg){
+        Log.d("Publish","subscriberMessage "+msg);
+    }
     protected Camera openFrontFacingCameraGingerbread() {
         int cameraCount = 0;
         Camera cam = null;
