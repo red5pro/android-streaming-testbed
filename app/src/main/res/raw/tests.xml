@@ -1,14 +1,14 @@
 <Testbed>
     <Properties>
-        <bitrate>400</bitrate>
+        <bitrate>750</bitrate>
         <host>0.0.0.0</host>
         <buffer_time>1</buffer_time>
         <port>8554</port>
         <stream1>stream1</stream1>
         <stream2>stream2</stream2>
         <context>live</context>
-        <camera_width>426</camera_width>
-        <camera_height>240</camera_height>
+        <camera_width>640</camera_width>
+        <camera_height>360</camera_height>
         <debug_view>true</debug_view>
         <video_on>true</video_on>
         <audio_on>true</audio_on>
@@ -147,10 +147,23 @@
             <description>Simple Subscribe Test!</description>
 
             <Properties>
+                <buffer_time>0</buffer_time>
             </Properties>
 
             <name>Subscribe</name>
             <class>SubscribeTest</class>
+        </Test>
+
+        <Test title="Subscribe - Reconnect">
+
+            <description>Simple Subscribe Reconnection test.  Touch to disconnect and automatically reconnect</description>
+
+            <Properties>
+                <buffer_time>0</buffer_time>
+            </Properties>
+
+            <name>Subscribe - Reconnect</name>
+            <class>SubscribeReconnectTest</class>
         </Test>
 
         <Test title="Subscribe - Aspect Ratio">
