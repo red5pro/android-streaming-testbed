@@ -153,6 +153,18 @@
             <class>SubscribeTest</class>
         </Test>
 
+        <Test title="Subscribe - Reconnect">
+
+            <description>Simple Subscribe Reconnection test.  Touch to disconnect and automatically reconnect</description>
+
+            <Properties>
+                <buffer_time>0</buffer_time>
+            </Properties>
+
+            <name>Subscribe - Reconnect</name>
+            <class>SubscribeReconnectTest</class>
+        </Test>
+
         <Test title="Subscribe - Aspect Ratio">
 
             <description>Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.</description>
