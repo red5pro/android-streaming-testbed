@@ -55,7 +55,7 @@ Once you have modified your settings, you can run the application for simulator 
 | :-----
 | *Change the fill mode of the stream.  scale to fill, scale to fit, scale fill.  Aspect ratio should be maintained on first 2.* 
 |
-| **[Bandwidth Test](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeBadwidthTest)**
+| **[Bandwidth Test](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeBandwidthTest)**
 | *Detect Insufficient and Sufficient BW flags.  Test on a poor network using a publisher that has high video quality. Video should become sporadic or stop altogether.  The screen will darken when no video is being received.*  
 |
 | **[Cluster](app/src/main/java/red5pro/org/testandroidproject/tests/SubscribeCluster)** 
